@@ -1,0 +1,30 @@
+{
+  "name": "shop-app-practice-backend",
+  "version": "1.0.0",
+  "description": "A shopping app made for purely practice that resembles modern shopping web apps such as Amazon, Poshmark, etc. This web app will be created using the MERN stack for further practice in full stack programming especially with React.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkrejci1/shop-app-practice-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkrejci1/shop-app-practice-backend/issues"
+  },
+  "homepage": "https://github.com/jkrejci1/shop-app-practice-backend#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.1",
+    "mongoose": "^7.3.2",
+    "validator": "^13.9.0"
+  }
+}
