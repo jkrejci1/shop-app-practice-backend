@@ -2,7 +2,7 @@
   "name": "shop-app-practice-backend",
   "version": "1.0.0",
   "description": "A shopping app made for purely practice that resembles modern shopping web apps such as Amazon, Poshmark, etc. This web app will be created using the MERN stack for further practice in full stack programming especially with React.",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"

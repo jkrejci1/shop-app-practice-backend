@@ -20,13 +20,10 @@ const userRoutes = require('./routes/user')
 const PORT = process.env.PORT || 5000
 
 //Connect to MongoDB RETURNS A PROMISE
-/** 
-mongoose.connect("mongodb+srv://jkrejci1988:12345@mernapp.qtbtpsh.mongodb.net/?retryWrites=true&w=majority")
-
+mongoose.connect("mongodb+srv://jkrejci1988:12345@cluster0.mkek3rm.mongodb.net/?retryWrites=true&w=majority")
     .catch((error) => {
         console.log(error) //Log any error that happens when trying to connect
     })
-*/
 
 //Start up the app and store it in app
 const app = express()
@@ -38,9 +35,24 @@ app.use(express.json()) //Any request that comes in -> Passes data to requests o
 app.use(express.static(path.join(__dirname + "/public"))) //Attempt for connecting MERN FRONT TO BACK
 app.use(cors())
 
+//Register middleware
+app.use((req, res, next) => {
+    console.log(req.path, req.method)
+    next()
+})
+
 //Routes (/api/workouts -> Only fire these routes when you come to the first path, can be anything)
 //app.use('/api/items', itemRoutes) //So when we fire to '/api/workouts' then we need to use those specific routes that will check for the route after the last forward slash from the given requirement -> for any request -> GET POST DELETE ... etc
-//app.use('/api/user', userRoutes) //So when we fire to '/api/workouts' then we need to use those specific routes that will check for the route after the last forward slash from the given requirement -> for any request -> GET POST DELETE ... etc
+app.use('/api/user', userRoutes) //So when we fire to '/api/workouts' then we need to use those specific routes that will check for the route after the last forward slash from the given requirement -> for any request -> GET POST DELETE ... etc
+//COMMENT WHEN TESTING OUT WHEN NOT PUSHING TO AZURE
+//Fixes loading error on login and signup page where there isn't any get requests; when we refresh on the page and get failed to GET /*
+app.get('/*', function(req, res) {
+    res.sendFile(path.join(__dirname, 'public/index.html'), function(err) {
+      if (err) {
+        res.status(500).send(err)
+      }
+    })
+  })
 
 
 //Check to see if server runs properly
