@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.765e641f.css",
-    "main.js": "/static/js/main.ef5fdfc5.js",
+    "main.js": "/static/js/main.bb93636d.js",
     "static/media/gardeningSection.png": "/static/media/gardeningSection.7345b33b41ac6757e3dc.png",
     "static/media/toolsSection.png": "/static/media/toolsSection.379150f05f7c5375d7bb.png",
     "static/media/fishingSection.jpg": "/static/media/fishingSection.5b02510daa874b18564b.jpg",
@@ -9,10 +9,10 @@
     "static/media/cart.png": "/static/media/cart.a4fbc8d2718b27cf7853.png",
     "index.html": "/index.html",
     "main.765e641f.css.map": "/static/css/main.765e641f.css.map",
-    "main.ef5fdfc5.js.map": "/static/js/main.ef5fdfc5.js.map"
+    "main.bb93636d.js.map": "/static/js/main.bb93636d.js.map"
   },
   "entrypoints": [
     "static/css/main.765e641f.css",
-    "static/js/main.ef5fdfc5.js"
+    "static/js/main.bb93636d.js"
   ]
 }

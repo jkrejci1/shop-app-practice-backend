@@ -44,6 +44,7 @@ app.use((req, res, next) => {
 //Routes (/api/workouts -> Only fire these routes when you come to the first path, can be anything)
 //app.use('/api/items', itemRoutes) //So when we fire to '/api/workouts' then we need to use those specific routes that will check for the route after the last forward slash from the given requirement -> for any request -> GET POST DELETE ... etc
 app.use('/api/user', userRoutes) //So when we fire to '/api/workouts' then we need to use those specific routes that will check for the route after the last forward slash from the given requirement -> for any request -> GET POST DELETE ... etc
+app.use('/api/items', itemRoutes)
 //COMMENT WHEN TESTING OUT WHEN NOT PUSHING TO AZURE
 //Fixes loading error on login and signup page where there isn't any get requests; when we refresh on the page and get failed to GET /*
 app.get('/*', function(req, res) {
@@ -53,7 +54,6 @@ app.get('/*', function(req, res) {
       }
     })
   })
-
 
 //Check to see if server runs properly
 
