@@ -1,18 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.765e641f.css",
-    "main.js": "/static/js/main.bb93636d.js",
+    "main.css": "/static/css/main.f6349a7c.css",
+    "main.js": "/static/js/main.89af6c2b.js",
     "static/media/gardeningSection.png": "/static/media/gardeningSection.7345b33b41ac6757e3dc.png",
     "static/media/toolsSection.png": "/static/media/toolsSection.379150f05f7c5375d7bb.png",
     "static/media/fishingSection.jpg": "/static/media/fishingSection.5b02510daa874b18564b.jpg",
     "static/media/kitchenDiningSection.png": "/static/media/kitchenDiningSection.3af74b8aff8b66ec6586.png",
-    "static/media/cart.png": "/static/media/cart.a4fbc8d2718b27cf7853.png",
+    "static/media/gloves.png": "/static/media/gloves.bbd5719d11fef87b78af.png",
+    "static/media/wrench.jpg": "/static/media/wrench.100e69c63bddca453c43.jpg",
+    "static/media/crankbait.jpg": "/static/media/crankbait.16ad5ea2e4eb0a42a74e.jpg",
+    "static/media/pans.jpg": "/static/media/pans.2cf0707e164d691b1ee9.jpg",
+    "static/media/popper.jpg": "/static/media/popper.50cad3f03f9f1f8def68.jpg",
+    "static/media/cart.png": "/static/media/cart.2f4a19b8f0f21ff543d0.png",
+    "static/media/shovel.jpg": "/static/media/shovel.8c79868fd8757b9934a2.jpg",
+    "static/media/ladle.jpg": "/static/media/ladle.3a0c8a5a5929ba8b00d8.jpg",
     "index.html": "/index.html",
-    "main.765e641f.css.map": "/static/css/main.765e641f.css.map",
-    "main.bb93636d.js.map": "/static/js/main.bb93636d.js.map"
+    "main.f6349a7c.css.map": "/static/css/main.f6349a7c.css.map",
+    "main.89af6c2b.js.map": "/static/js/main.89af6c2b.js.map"
   },
   "entrypoints": [
-    "static/css/main.765e641f.css",
-    "static/js/main.bb93636d.js"
+    "static/css/main.f6349a7c.css",
+    "static/js/main.89af6c2b.js"
   ]
 }

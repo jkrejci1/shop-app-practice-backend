@@ -47,6 +47,8 @@ app.use('/api/user', userRoutes) //So when we fire to '/api/workouts' then we ne
 app.use('/api/items', itemRoutes)
 //COMMENT WHEN TESTING OUT WHEN NOT PUSHING TO AZURE
 //Fixes loading error on login and signup page where there isn't any get requests; when we refresh on the page and get failed to GET /*
+
+
 app.get('/*', function(req, res) {
     res.sendFile(path.join(__dirname, 'public/index.html'), function(err) {
       if (err) {
@@ -54,6 +56,7 @@ app.get('/*', function(req, res) {
       }
     })
   })
+
 
 //Check to see if server runs properly
 

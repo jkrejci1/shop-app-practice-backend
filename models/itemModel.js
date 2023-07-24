@@ -14,7 +14,11 @@ const itemSchema = new Schema({
     price: { //Store ID's of products here and display them in the user's cart
         type: Number,
         required: true
+    },
+    imgName: {
+        type: String
     }
+
 })
 
 //Function to find all the items of a specific item type (when card clicked on home page)
